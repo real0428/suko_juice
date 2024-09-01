@@ -1,0 +1,268 @@
+/*=====全部共用區=====*/
+
+#header_pic {
+    background-image: url(../images/news_banner2.png);
+}
+
+.list_item1 {
+    list-style-type: none;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.list_item1 li {
+    float: left;
+    list-style-image: url(../images/list_photo.png);
+    margin-left: 40px;
+}
+
+.list_item1 a {
+    color: #000;
+    text-decoration: none;
+}
+
+.list_item1 a:hover {
+    transition: 0.6s;
+    color: rgb(194, 197, 26);
+}
+
+.list_item2 {
+    float: right;
+    list-style-type: none;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.list_item2 li {
+    float: left;
+    margin-left: 20px;
+    padding-left: 5px;
+    border-left: 1px dashed rgb(83, 63, 17);
+}
+
+.list_item2 a {
+    color: #000;
+    text-decoration: none;
+    writing-mode: vertical-lr;
+    font-weight: bold;
+    color: rgb(83, 63, 17);
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.list_item2 span {
+    writing-mode: horizontal-tb;
+    color: rgb(119, 37, 26);
+    letter-spacing: 0px;
+    padding-bottom: 5px;
+    font-family: "細明體", Arial, Helvetica, sans-serif;
+}
+
+.list_item2 li:first-child a:visited {
+    color: rgb(15, 87, 19)
+}
+
+.list_item2 a:hover {
+    color: rgb(15, 87, 19);
+}
+
+
+#BOX {
+    clear: both;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+#BOX .box {
+    display: block;
+    width: 360px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    background-color: #FFF;
+    font-family: "新細明體";
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#BOX img {
+    width: 100%;
+    height: 100%;
+}
+
+#BOX .box>div {
+    padding: 20px 20px;
+}
+
+#BOX h3 {
+    color: rgb(81 81 81);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#BOX p {
+    font-size: 16px;
+    color: rgb(93, 93, 93);
+    line-height: 20px;
+    text-align: justify;
+
+}
+
+@media screen and (max-width:767px) {
+    .list_item2 {
+        width: 65%;
+        list-style-type: none;
+        overflow: hidden;
+        margin-top: 50px;
+        position: relative;
+        right: 10px;
+    }
+
+    .list_item2 li {
+        float: left;
+        margin-left: 40px;
+        padding: 0px 5px;
+        border-left: 1px dashed rgb(83, 63, 17);
+    }
+
+    .list_item2 a {
+        height: 140px;
+        color: #000;
+        text-decoration: none;
+        writing-mode: vertical-lr;
+        font-weight: bold;
+        color: rgb(83, 63, 17);
+        letter-spacing: 8px;
+        font-size: 16px;
+    }
+
+
+    .list_item2 span {
+        writing-mode: horizontal-tb;
+        color: rgb(119, 37, 26);
+        letter-spacing: 0px;
+        padding-bottom: 5px;
+        font-family: "細明體", Arial, Helvetica, sans-serif;
+    }
+
+    .list_item2 li:first-child a:visited {
+        color: rgb(15, 87, 19)
+    }
+
+    .list_item2 a:hover {
+        color: rgb(15, 87, 19);
+    }
+
+
+    #BOX {
+        width: 100%;
+        padding: 40px;
+    }
+
+    #BOX .box {
+        display: block;
+        width: 100%;
+        float: none;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 40px;
+        background-color: #FFF;
+        font-family: "新細明體";
+    }
+
+    #BOX img {
+        width: 100%;
+        height: auto;
+    }
+
+    #BOX h3 {
+        color: rgb(25, 78, 12);
+        font-size: 20px;
+    }
+
+    #BOX p {
+        font-size: 16px;
+        color: rgb(93, 93, 93);
+        line-height: 20px;
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .list_item2 {
+        width: 30%;
+        list-style-type: none;
+        overflow: hidden;
+        margin-top: 50px;
+        position: relative;
+        right: 0px;
+    }
+
+    .list_item2 li {
+        float: left;
+        margin-left: 20px;
+        padding-left: 5px;
+        border-left: 1px dashed rgb(83, 63, 17);
+    }
+
+    .list_item2 a {
+        color: #000;
+        text-decoration: none;
+        writing-mode: vertical-lr;
+        font-weight: bold;
+        color: rgb(83, 63, 17);
+        letter-spacing: 5px;
+        font-size: 20px;
+    }
+
+    .list_item2 span {
+        writing-mode: horizontal-tb;
+        color: rgb(119, 37, 26);
+        letter-spacing: 0px;
+        padding-bottom: 5px;
+        font-family: "細明體", Arial, Helvetica, sans-serif;
+    }
+
+    .list_item2 li:first-child a:visited {
+        color: rgb(15, 87, 19)
+    }
+
+    .list_item2 a:hover {
+        color: rgb(15, 87, 19);
+    }
+
+    #BOX {
+        width: 100%;
+        padding: 40px;
+    }
+
+    #BOX .box {
+        display: block;
+        width: calc(50% - 20px);
+        float: left;
+        margin-left: 20px;
+        margin-top: 0;
+        margin-bottom: 40px;
+        background-color: #FFF;
+        font-family: "新細明體";
+    }
+
+    #BOX img {
+        width: 100%;
+        height: auto;
+    }
+
+    #BOX h3 {
+        color: rgb(25, 78, 12);
+        font-size: 20px;
+    }
+
+    #BOX p {
+        font-size: 16px;
+        color: rgb(93, 93, 93);
+        line-height: 20px;
+        text-align: justify;
+    }
+}
