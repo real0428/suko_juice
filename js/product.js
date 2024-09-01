@@ -63,7 +63,9 @@ products.forEach(product => {
   container.appendChild(card);
 });
 
+
 function addToCart(product) {
+
   lightboxImg.src = product.image;
   lightboxTitle.textContent = product.title;
   lightboxPrice.textContent = "NT$" + product.price + "元";
@@ -71,6 +73,26 @@ function addToCart(product) {
   requestAnimationFrame(() => {
     lightbox.classList.add('show');
   });
+
+  let quantity = 1;
+  const quantityValue = document.getElementById('quantity-value');
+  const incrementBtn = document.getElementById('increment');
+  const decrementBtn = document.getElementById('decrement');
+  quantityValue.textContent = quantity;
+
+  incrementBtn.addEventListener('click', () => {
+    quantity++;
+    quantityValue.textContent = quantity;
+  });
+
+  decrementBtn.addEventListener('click', () => {
+    if (quantity > 1) {
+      quantity--;
+      quantityValue.textContent = quantity;
+    }
+  });
+
+
 }
 
 // 關閉燈箱
@@ -92,21 +114,4 @@ lightbox.addEventListener('click', (event) => {
 });
 
 
-const quantityValue = document.getElementById('quantity-value');
-const incrementBtn = document.getElementById('increment');
-const decrementBtn = document.getElementById('decrement');
-
-let quantity = 1;
-
-incrementBtn.addEventListener('click', () => {
-  quantity++;
-  quantityValue.textContent = quantity;
-});
-
-decrementBtn.addEventListener('click', () => {
-  if (quantity > 1) {
-    quantity--;
-    quantityValue.textContent = quantity;
-  }
-});
 
